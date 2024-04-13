@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.02.1
+%define		kdeappsver	24.02.2
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kate
@@ -9,12 +9,12 @@
 Summary:	K Desktop Environment - Advanced Text Editor
 Summary(pl.UTF-8):	K Desktop Environment -  Zaawansowany edytor tekstu
 Name:		ka6-%{kaname}
-Version:	24.02.1
+Version:	24.02.2
 Release:	1
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	7bb15e9f1fa31f248b30bbe1a4bd96e3
+# Source0-md5:	a388e3a756b3194822273e8069101ac2
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel
 BuildRequires:	Qt6DBus-devel
@@ -227,6 +227,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/de/man1/kate.1*
 %{_mandir}/eo/man1/kate.1*
 %{_mandir}/es/man1/kate.1*
+%{_mandir}/fr/man1/kate.1*
 %{_mandir}/it/man1/kate.1*
 %{_mandir}/man1/kate.1*
 %{_mandir}/nl/man1/kate.1*

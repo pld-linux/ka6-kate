@@ -154,6 +154,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/kate
 %attr(755,root,root) %{_bindir}/kwrite
 %attr(755,root,root) %{_libdir}/libkateprivate.so.*.*
+%dir %{_libdir}/qt6/plugins/kf6/ktexteditor
 %attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/cmaketoolsplugin.so
 %attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/compilerexplorer.so
 %attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/eslintplugin.so
@@ -193,6 +194,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_desktopdir}/org.kde.kwrite.desktop
 %{_iconsdir}/hicolor/128x128/apps/kate.png
 %{_iconsdir}/hicolor/128x128/apps/kwrite.png
+%dir %{_iconsdir}/hicolor/150x150
+%dir %{_iconsdir}/hicolor/150x150/apps
 %{_iconsdir}/hicolor/150x150/apps/kate.png
 %{_iconsdir}/hicolor/150x150/apps/kwrite.png
 %{_iconsdir}/hicolor/16x16/apps/kate.png
@@ -201,10 +204,14 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/22x22/apps/kwrite.png
 %{_iconsdir}/hicolor/256x256/apps/kate.png
 %{_iconsdir}/hicolor/256x256/apps/kwrite.png
+%dir %{_iconsdir}/hicolor/310x310
+%dir %{_iconsdir}/hicolor/310x310/apps
 %{_iconsdir}/hicolor/310x310/apps/kate.png
 %{_iconsdir}/hicolor/310x310/apps/kwrite.png
 %{_iconsdir}/hicolor/32x32/apps/kate.png
 %{_iconsdir}/hicolor/32x32/apps/kwrite.png
+%dir %{_iconsdir}/hicolor/44x44
+%dir %{_iconsdir}/hicolor/44x44/apps
 %{_iconsdir}/hicolor/44x44/apps/kate.png
 %{_iconsdir}/hicolor/44x44/apps/kwrite.png
 %{_iconsdir}/hicolor/48x48/apps/kate.png
@@ -215,7 +222,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/64x64/apps/kwrite.png
 %{_iconsdir}/hicolor/scalable/apps/kate.svg
 %{_iconsdir}/hicolor/scalable/apps/kwrite.svg
+%dir %{_datadir}/kateproject
 %{_datadir}/kateproject/kateproject.example
+%dir %{_datadir}/katexmltools
 %{_datadir}/katexmltools/html4-loose.dtd.xml
 %{_datadir}/katexmltools/html4-strict.dtd.xml
 %{_datadir}/katexmltools/kcfg.dtd.xml

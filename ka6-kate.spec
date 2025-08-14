@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.04.3
+%define		kdeappsver	25.08.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kate
@@ -9,12 +9,12 @@
 Summary:	K Desktop Environment - Advanced Text Editor
 Summary(pl.UTF-8):	K Desktop Environment -  Zaawansowany edytor tekstu
 Name:		ka6-%{kaname}
-Version:	25.04.3
+Version:	25.08.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	a4dd464f8e2ad0725777aeaf20359669
+# Source0-md5:	851fa4db208ea4dab5d2aca22fc986ec
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel
 BuildRequires:	Qt6DBus-devel
@@ -155,6 +155,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/kwrite
 %attr(755,root,root) %{_libdir}/libkateprivate.so.*.*
 %dir %{_libdir}/qt6/plugins/kf6/ktexteditor
+%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/bookmarksplugin.so
 %attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/cmaketoolsplugin.so
 %attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/compilerexplorer.so
 %attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/eslintplugin.so

@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.2
+%define		kdeappsver	25.08.3
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kate
@@ -9,12 +9,12 @@
 Summary:	K Desktop Environment - Advanced Text Editor
 Summary(pl.UTF-8):	K Desktop Environment -  Zaawansowany edytor tekstu
 Name:		ka6-%{kaname}
-Version:	25.08.2
-Release:	2
+Version:	25.08.3
+Release:	1
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	ab66297520f8edea2fbed01e82649e4a
+# Source0-md5:	a39d35117f9d5efe5472dd399b00a318
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel
 BuildRequires:	Qt6DBus-devel
@@ -154,42 +154,42 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/kate
 %attr(755,root,root) %{_bindir}/kwrite
-%attr(755,root,root) %{_libdir}/libkateprivate.so.*.*
+%{_libdir}/libkateprivate.so.*.*
 %dir %{_libdir}/qt6/plugins/kf6/ktexteditor
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/bookmarksplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/cmaketoolsplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/compilerexplorer.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/eslintplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/externaltoolsplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/formatplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katebacktracebrowserplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katebuildplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katecloseexceptplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katecolorpickerplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katectagsplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katefilebrowserplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katefiletreeplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/kategdbplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/kategitblameplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katekonsoleplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/kateprojectplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katereplicodeplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katesearchplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katesnippetsplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katesymbolviewerplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katexmlcheckplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katexmltoolsplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/keyboardmacrosplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/ktexteditorpreviewplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/latexcompletionplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/lspclientplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/openlinkplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/rainbowparens.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/tabswitcherplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/textfilterplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/rbqlplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/katesqlplugin.so
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/ktexteditor/templateplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/bookmarksplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/cmaketoolsplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/compilerexplorer.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/eslintplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/externaltoolsplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/formatplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katebacktracebrowserplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katebuildplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katecloseexceptplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katecolorpickerplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katectagsplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katefilebrowserplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katefiletreeplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/kategdbplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/kategitblameplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katekonsoleplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/kateprojectplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katereplicodeplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katesearchplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katesnippetsplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katesymbolviewerplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katexmlcheckplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katexmltoolsplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/keyboardmacrosplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/ktexteditorpreviewplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/latexcompletionplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/lspclientplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/openlinkplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/rainbowparens.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/tabswitcherplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/textfilterplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/rbqlplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/katesqlplugin.so
+%{_libdir}/qt6/plugins/kf6/ktexteditor/templateplugin.so
 
 %files data -f %{kaname}.lang
 %defattr(644,root,root,755)
